@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> <!--문자유니코드 설정-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- 메타태그 - 가장 최신버전의 브라우저로 설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 메타태그 - 뷰포트 설정 : 디바이스의 가로길이에 맞춰 1배수의 크기로-->
+    <meta name="description" content="던킨도넛 홈페이지입니다."> <!-- 메타태그 - 홈페이지 설명문-->
+
+    <title>DUNKIN DONUT</title> <!-- 홈페이지 제목-->
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--글씨체-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+<!--글씨체끝-->
+
+</head>
+<body>
+           <script src="js/jquery-3.6.0.min.js"></script>
+
+
+
+
+        <div id="main">
+<img src="image/main.jpg" width="100%">
+      <div class="header">
+               <div class="inner">
+                <div class="logo"><img src="image/logo.png" alt="로고"></div>
+                <div class="hamburger"><img src="image/menudd.png"></div>
+                <ul class="menu">
+                    <li><a href="#">ONLINE STORE</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">영양정보 및 알레르기</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">STORE</a></li>
+                    <li><a href="#">BRAND</a></li>
+                    <div class="space"></div>
+                </ul>
+                <div class="space"></div>
+        </div></div></div>
+
+                   <script>
+
+$(function() {
+	$(".menu").hide();
+	$(".hamburger").on("click", function( ) {
+		$(".menu").slideToggle(500, "swing");
+	});
+});
+
+
+<!--.nav클래스를 가진 영역이 가로창 765부터는 보인다.-->
+$(function(){
+    var win_w = $(window).width();
+    if(win_w >= 765){
+            $(".menu").show();
+	}
+});
+</script>
+
+
+
+
+
+        <div id="content-1">
+        <div class="inner">
+               <h3>MENU</h3>
+               <ul class="border-box">
+                <li class="f-box"><img src="image/big_536.png">
+                <h4>DONUT</h4>
+               </li>
+                <li class="f-box">
+                    <img src="image/1607136323.png" >
+                <h4>COFFEE</h4>
+
+                </li>
+                <li class="f-box f-box3">
+                    <img src="image/1625118105.png">
+                <h4>BAVERAGE</h4>
+
+                </li>
+                <div class="space"></div></ul>
+            </div></div>
+
+        <div id="content-2">
+               <div class="inner">
+                <h3>EVENT</h3>
+                <ul class="event_box">
+                    <li class="s-box"><img src="image/event1.png">
+                    </li>
+                    <li class="s-box"><img src="image/event2.png"></li>
+                    <li class="s-box s-boxr"><img src="image/event3.png"></li>
+                </ul>
+        </div></div>
+        <div id="content-3">
+            <img src="image/store%20(2).jpg" class="store">
+            <div class="inner">
+            <h3 class="english">FIND A STORE</h3>
+            <h3 class="store_search">매장찾기</h3>
+            <p>달콤한 휴식을 즐길 수 있는 <br>
+            <strong>던킨도너츠 매장</strong>을 찾아보세요.</p>
+            <div class="more">More</div>
+        </div></div>
+        <div id="footer">
+
+            <div class="footer-t">
+             <div class="inner">
+                    <ul class="footer-t-t">
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">거래희망회사</a></li>
+                    <li><a href="#">사전등록</a></li>
+                    <li><a href="#">채용안내</a></li></ul>
+               </div>
+            </div>
+            <div class="footer-b">
+               <div class="inner">
+                <img src="image/logo.png">
+                <div class="copyright">
+                    <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
+사업자 등록번호 : 303-81-09535비알코리아(주) 대표이사 도세호<br>
+TEL : 080-555-3131개인정보관리책임자 : 김경우<br>
+COPYRIGHT Ⓒ 2016 BRKOREA COMPANY. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="number"><p>080-555-3131</p></div>
+            </div></div>
+        </div>
+
+
+
+</body>
+</html>
